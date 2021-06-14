@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  max-width: 1080px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 5px;
+  z-index: 0;
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  font-weight: bold;
+}
+.btn:before {
+  content: "";
+  width: 100%;
+  height: 40%;
+  bottom: 6px;
+  left: 0;
+  position: absolute;
+  background: #bc6a86;
+  z-index: -1;
+}
+.btn-reverse:before {
+  background: #ffe7e6;
+}
+.btn-secondary:before {
+  background: #ffe78d;
+}

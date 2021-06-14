@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: "Allura", cursive;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+img {
+  position: block;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar {
+  background: #fff;
+}
+header .navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar ul a {
+  color: #0b6a6b;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+header .introduction {
+  border-top: #cd899e solid 2px;
+  background: #ffe7e6;
+  text-align: center;
+}
+header .introduction h2 {
+}
+header .introduction .flex_introduction {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+header .introduction .flex_introduction .img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+header .introduction .flex_introduction .img img.photo {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 2.5%;
+  background: #fff;
+  z-index: 1;
+}
+header .introduction .flex_introduction .img img.underline {
+  height: auto;
+  width: 100%;
+  bottom: -7%;
+  left: -10%;
+  position: absolute;
+  z-index: 0;
+}
+header .introduction .flex_introduction .img:before {
+  content: "";
+  top: -16%;
+  left: 3%;
+  width: 24%;
+  height: 30%;
+  position: absolute;
+  background: rgba(253, 220, 101, 0.7);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+header .introduction .flex_introduction .text {
+  flex: 1;
+}
+header .introduction .flex_introduction p {
+  text-align: justify;
+}
+/* Introduction_Bottom */
+header .introduction_bottom {
+  border-top: 2px solid #fff;
+  background: #f2edec;
+}
+header .introduction_bottom ul {
+  font-family: "Amatic SC", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Blog */
+.blog {
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
+  text-align: center;
+  border-bottom: 5px pink solid;
+}
+.blog .flex_blog {
+  position: relative;
+  display: flex;
+  background: #0c6a6b;
+  color: #fff;
+  /* top: 25px; */
+  left: 50px;
+}
+.blog .flex_blog .img {
+  flex: 0.5;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -50px;
+  left: -50px;
+}
+.blog .flex_blog .img img {
+  background: #ffe7e5;
+  padding: 10px;
+}
+.blog .flex_blog .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-right: 50px;
+}
+.blog .flex_blog .text h3 {
+  align-self: flex-start;
+  padding-bottom: 15px;
+}
+
+/* Stickers */
+.stickers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffe7e6;
+}
+.stickers .flex_stickers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.stickers .flex_stickers .sticker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stickers .flex_stickers .sticker img {
+  width: 250px;
+}
+/* Instagram Feed */
+
+.instagram_feed {
+  margin: 200px 0;
+}
+.instagram_feed .instafeed_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  padding: 0 50px;
+}
+.instagram_feed .instafeed_container img {
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 2px 2px 2px rgba(180, 180, 180, 0.747);
+  transform: scale(1, 1) translateY(50px);
+  transition: all 400ms ease-in-out;
+  opacity: 1;
+}
+/* .instagram_feed .instafeed_container img.show {
+  opacity: 1;
+  transform: translateY(0px);
+} */
+.instagram_feed .instafeed_container img:hover {
+  transform: scale(1.02, 1.02);
+  transition: transform 100ms ease-in-out;
+}
+/* Footer */
